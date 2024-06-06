@@ -997,7 +997,7 @@ const questions = [
             "C.22",
             "D.23"
         ],
-        "answer": "D",
+        "answer": "C",
         "hint": "SSH（安全外壳协议）默认使用22端口进行安全通信。"
     },
     {
