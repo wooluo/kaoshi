@@ -1386,14 +1386,14 @@ const questions = [
         "hint": "右击'开始'按钮出现的快捷菜单中不包含'打开'这一命令。"
     },
     {
-        "question": "在Windows中，右击（A）图标不会出现“资源管理器”命令。",
+        "question": "在Windows中，右击（C）图标不会出现“资源管理器”命令。",
         "options": [
             "A.我的电脑",
             "B.网上邻居",
             "C.InternetExplorer",
             "D.回收站"
         ],
-        "answer": "D",
+        "answer": "C",
         "hint": "右击InternetExplorer图标时，不会出现'资源管理器'这一选项。"
     },
     {
@@ -1419,7 +1419,7 @@ const questions = [
         "hint": "在资源管理器中，如果只单击左边窗口的文件夹而不打开，右边窗口的内容不会变化。"
     },
     {
-        "question": "在Windows中，如果在“资源管理器”中将当前磁盘由驱动器D改变到驱动器C，下面的操作正确的是（A）。",
+        "question": "在Windows中，如果在“资源管理器”中将当前磁盘由驱动器D改变到驱动器C，下面的操作正确的是（D）。",
         "options": [
             "A.单击驱动器C的图标",
             "B.右击驱动",
