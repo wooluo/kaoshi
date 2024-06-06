@@ -1047,10 +1047,10 @@ const questions = [
     {
         "question": "安卓设备通过adb备份出的文件的签名是什么。（C）",
         "options": [
-            "A.ANDROIDBACKUP",
-            "B.ADBBACKUP",
-            "C.ANDROIDFILES",
-            "D.ADBFILES"
+            "A.ANDROID BACKUP",
+            "B.ADB BACKUP",
+            "C.ANDROID FILES",
+            "D.ADB FILES"
         ],
         "answer": "C",
         "hint": "安卓设备通过adb备份的文件通常带有'ANDROIDBACKUP'签名。"
