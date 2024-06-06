@@ -1239,7 +1239,7 @@ const questions = [
             "C.regedit",
             "D.read"
         ],
-        "answer": "D",
+        "answer": "C",
         "hint": "regedit是Windows操作系统中用于打开注册表编辑器的命令。"
     },
     {
