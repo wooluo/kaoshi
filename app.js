@@ -4280,13 +4280,18 @@ function checkAnswer(selectedOption) {
   const correctAnswer = currentQuestion.answer;
   let message = '';
 
+
   if (selectedOption === correctAnswer) {
     message = '回答正确!';
-  } else {
+} else {
     message = `回答错误! 提示: ${currentQuestion.hint}`;
-  }
+    alert(message); // 只有在回答错误时才弹出消息
+}
 
-  alert(message);
+// 如果需要在正确时显示某些信息，可以在这里添加代码
+if (selectedOption === correctAnswer) {
+    console.log(message); // 例如，控制台输出正确的消息
+}
 
   // 移动到下一题或结束测验
   if (currentQuestionIndex < questions.length - 1) {
@@ -4313,6 +4318,7 @@ function updateProgressBar() {
 function switchTheme() {
   const app = document.getElementById('app');
   app.classList.toggle('night-mode');
+  app.classList.toggle('.eye-care-mode');
 }
 
 // 绑定按钮点击事件
