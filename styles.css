@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#questionContainer {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+#optionsContainer {
+    margin-top: 20px;
+}
+
+#optionsContainer button {
+    margin-top: 10px;
+}
+
+#progressBar {
+    width: 80%;
+    height: 20px;
+    background-color: #ddd;
+    position: relative;
+}
+
+#progressBar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s;
+}
+
+.night-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.eye-care-mode {
+    background-color: #f5f5dc;
+    color: #555555;
+}
