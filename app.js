@@ -1080,10 +1080,10 @@ const questions = [
     {
         "question": "Linux下MYSQL启动时加载的配置是（B）。",
         "options": [
-            "A.mysqD.ini",
+            "A.mysql.ini",
             "B.my.cnf",
             "C.my.ini",
-            "D.mysqD.cnf"
+            "D.mysql.cnf"
         ],
         "answer": "B",
         "hint": "MySQL的配置文件通常命名为'my.cnf'，这是启动时加载的配置文件。"
@@ -1102,13 +1102,13 @@ const questions = [
     {
         "question": "使用华为手机助手进行数据备份，备份的密码信息存储在以下哪个文件中。（C）",
         "options": [
-            "A.dataInfC.ini",
-            "B.datainfC.dat",
-            "C.backupinfC.dat",
-            "D.backupinfC.ini"
+            "A.dataInfo.ini",
+            "B.datainfo.dat",
+            "C.backupinfo.dat",
+            "D.backupinfo.ini"
         ],
         "answer": "C",
-        "hint": "华为手机助手备份的数据，包括密码信息，通常存储在'backupinfC.dat'文件中。"
+        "hint": "华为手机助手备份的数据，包括密码信息，通常存储在'backupinfo.dat'文件中。"
     },
     {
         "question": "在一起赌博案件中，嫌疑人在云服务器中搭建了赌博网站，办案人员对其网站进行分析后发现赌博网站数据库中存储了用户的用户名明文和用户密码的MD5值，请问办案人员通过以下哪种方式不能使用用户信息进行登录。（B）",
