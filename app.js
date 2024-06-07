@@ -1751,10 +1751,10 @@ const questions = [
     {
         "question": "SCOTT用户首次使用时被进行了加锁设置，当需对其解锁时，需要使用以下（B）关键字。",
         "options": [
-            "A.createuser",
-            "B.alteruser",
-            "C.modifyuser",
-            "D.deleteuser"
+            "A.create user",
+            "B.alter user",
+            "C.modify user",
+            "D.delete user"
         ],
         "answer": "B",
         "hint": "alteruser是SQL命令，用于修改用户属性，包括解锁用户。"
@@ -1894,10 +1894,10 @@ const questions = [
     {
         "question": "jpg图片底层中，缩略图的头部代码是（A）。",
         "options": [
-            "A.FFD4",
-            "B.FFD8",
-            "C.FFD9",
-            "D.FFD5"
+            "A.FF D4",
+            "B.FF D8",
+            "C.FF D9",
+            "D.FF D5"
         ],
         "answer": "A",
         "hint": "JPEG图像中的缩略图通常以FFD4作为头部代码。"
