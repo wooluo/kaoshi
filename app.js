@@ -4264,7 +4264,7 @@ function displayQuestion() {
 
     currentQuestion.options.forEach((option, index) => {
         const button = document.createElement('button');
-        button.textContent = `${optionLetters[index]}. ${option}`;
+        button.textContent = `${optionLetters[index]}. ${option.replace(`${optionLetters[index]}.`, '')}`;
         button.addEventListener('click', () => checkAnswer(optionLetters[index]));
         optionsContainer.appendChild(button);
     });
