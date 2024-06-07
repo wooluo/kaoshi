@@ -761,10 +761,10 @@ const questions = [
     {
         "question": "已知手机中安装有QQ应用，以下哪个ADB备份命令不能备份到QQ应用数据（A）。",
         "options": [
-            "A.adb backup -apk -shared com.tencent.mobileqq",
-            "B.adb backup -noapk -noshared com.tencent.mobileqq",
-            "C.adb backup -noapk -shared –all",
-            "D.adb backup -apk -shared -system com.tencent.mm"
+            "A.adbbackup-apk-sharedcoA.tencenD.mobileqq",
+            "B.adbbackup-noapk-nosharedcoA.tencenD.mobileqq",
+            "C.adbbackup-noapk-shared–all",
+            "D.adbbackup-apk-shared-systemcoA.tencenD.mm"
         ],
         "answer": "A",
         "hint": "该命令只会备份QQ的apk文件，而不会备份共享或系统数据。"
@@ -883,9 +883,9 @@ const questions = [
         "question": "在创建数据库表时，下列哪个字段表示主键？（B）。",
         "options": [
             "A.UNIQUE",
-            "B.PRIMARY KEY",
-            "C.FOREIGN KEY",
-            "D.MAIN KEY"
+            "B.PRIMARYKEY",
+            "C.FOREIGNKEY",
+            "D.MAINKEY"
         ],
         "answer": "B",
         "hint": "PRIMARYKEY是数据库中用于标识表中每行的唯一性的字段。"
@@ -904,10 +904,10 @@ const questions = [
     {
         "question": "下列哪个表示找出工资表中工资最高的前三名（C）。",
         "options": [
-            "A.select rownum, ename, salary from emp order by salary desc",
-            "B.select rownum, ename, salary from emp order by salary",
-            "C.select rownum, ename, salary from emp order by salary desc limit 3",
-            "D.select rownum, ename, salary from emp order by salary limit 3"
+            "A.selectrownum, ename, salaryfromemporderbysalarydesc",
+            "B.selectrownum, ename, salaryfromemporderbysalary",
+            "C.selectrownum, ename, salaryfromemporderbysalarydesclimit3",
+            "D.selectrownum, ename, salaryfromemporderbysalarylimit3"
         ],
         "answer": "C",
         "hint": "使用limit子句可以限制查询结果的数量，这里是限制为工资最高的前三名。"
@@ -997,7 +997,7 @@ const questions = [
             "C.22",
             "D.23"
         ],
-        "answer": "C",
+        "answer": "D",
         "hint": "SSH（安全外壳协议）默认使用22端口进行安全通信。"
     },
     {
@@ -1047,10 +1047,10 @@ const questions = [
     {
         "question": "安卓设备通过adb备份出的文件的签名是什么。（C）",
         "options": [
-            "A.ANDROID BACKUP",
-            "B.ADB BACKUP",
-            "C.ANDROID FILES",
-            "D.ADB FILES"
+            "A.ANDROIDBACKUP",
+            "B.ADBBACKUP",
+            "C.ANDROIDFILES",
+            "D.ADBFILES"
         ],
         "answer": "C",
         "hint": "安卓设备通过adb备份的文件通常带有'ANDROIDBACKUP'签名。"
@@ -1080,10 +1080,10 @@ const questions = [
     {
         "question": "Linux下MYSQL启动时加载的配置是（B）。",
         "options": [
-            "A.mysql.ini",
+            "A.mysqD.ini",
             "B.my.cnf",
             "C.my.ini",
-            "D.mysql.cnf"
+            "D.mysqD.cnf"
         ],
         "answer": "B",
         "hint": "MySQL的配置文件通常命名为'my.cnf'，这是启动时加载的配置文件。"
@@ -1102,13 +1102,13 @@ const questions = [
     {
         "question": "使用华为手机助手进行数据备份，备份的密码信息存储在以下哪个文件中。（C）",
         "options": [
-            "A.dataInfo.ini",
-            "B.datainfo.dat",
-            "C.backupinfo.dat",
-            "D.backupinfo.ini"
+            "A.dataInfC.ini",
+            "B.datainfC.dat",
+            "C.backupinfC.dat",
+            "D.backupinfC.ini"
         ],
         "answer": "C",
-        "hint": "华为手机助手备份的数据，包括密码信息，通常存储在'backupinfo.dat'文件中。"
+        "hint": "华为手机助手备份的数据，包括密码信息，通常存储在'backupinfC.dat'文件中。"
     },
     {
         "question": "在一起赌博案件中，嫌疑人在云服务器中搭建了赌博网站，办案人员对其网站进行分析后发现赌博网站数据库中存储了用户的用户名明文和用户密码的MD5值，请问办案人员通过以下哪种方式不能使用用户信息进行登录。（B）",
@@ -1133,7 +1133,7 @@ const questions = [
         "hint": "在ThinkPhp框架中，模块映射配置的名称是'URL_MODULE_MAP'。"
     },
     {
-        "question": "删除表的数据时，TRUNCATE TABLE的结果是什么（A）。",
+        "question": "删除表的数据时，TRUNCATETABLE的结果是什么（A）。",
         "options": [
             "A.表中的数据被删除，然后表也被删除",
             "B.不符合检查约束要求的数据被删除，而符合检查约束要求的数据依然保留",
@@ -1141,7 +1141,7 @@ const questions = [
             "D.符合检查约束要求的数据被删除，而不符合检查约束要求的数据依然保留"
         ],
         "answer": "C",
-        "hint": "TRUNCATE TABLE命令用于删除表中的所有行，但保留表结构和其属性、索引等。"
+        "hint": "TRUNCATETABLE命令用于删除表中的所有行，但保留表结构和其属性、索引等。"
     },
     {
         "question": "通常对安卓手机的取证，可采取备份的方式获取数据，以下哪种方法的备份对手机的数据可能造成破坏？（D）。",
@@ -1157,13 +1157,13 @@ const questions = [
     {
         "question": "已知手机中安装有QQ应用，以下哪个ADB备份命令不能备份到QQ应用数据？（C）。",
         "options": [
-            "A.adb backup -apk -shared com.tencent.mobileqq",
-            "B.adb backup -noapk -noshared com.tencent.mobileqq",
-            "C.adb backup -apk -shared -system com.tencent.mm",
-            "D.adb backup -noapk -shared -all"
+            "A.adbbackup-apk-sharedcoA.tencenD.mobileqq",
+            "B.adbbackup-noapk-nosharedcoA.tencenD.mobileqq",
+            "C.adbbackup-apk-shared-systemcoA.tencenD.mm",
+            "D.adbbackup-noapk-shared-all"
         ],
         "answer": "C",
-        "hint": "该命令会备份系统应用com.tencent.mm的数据，而不是QQ应用com.tencent.mobileqq的数据。"
+        "hint": "该命令会备份系统应用coA.tencenD.mm的数据，而不是QQ应用coA.tencenD.mobileqq的数据。"
     },
     {
         "question": "用于查看/var/log/wtmp日志的命令是（B）。",
@@ -1239,7 +1239,7 @@ const questions = [
             "C.regedit",
             "D.read"
         ],
-        "answer": "C",
+        "answer": "D",
         "hint": "regedit是Windows操作系统中用于打开注册表编辑器的命令。"
     },
     {
@@ -1364,14 +1364,14 @@ const questions = [
         "hint": "极端个人主义强调个人利益高于一切，这与社会主义职业道德建设的原则相违背。"
     },
     {
-        "question": "在Windows中，录音机播放文件的总计时间在（C）显示。",
+        "question": "在Windows中，录音机播放文件的总计时间在（B）显示。",
         "options": [
             "A.在效果的菜单下",
             "B.波形框的左边",
             "C.波形框的右边",
             "D.没有地方显示"
         ],
-        "answer": "C",
+        "answer": "D",
         "hint": "录音机播放文件时，波形框的右边通常会显示文件的总计播放时间。"
     },
     {
@@ -1386,14 +1386,14 @@ const questions = [
         "hint": "右击'开始'按钮出现的快捷菜单中不包含'打开'这一命令。"
     },
     {
-        "question": "在Windows中，右击（C）图标不会出现“资源管理器”命令。",
+        "question": "在Windows中，右击（A）图标不会出现“资源管理器”命令。",
         "options": [
             "A.我的电脑",
             "B.网上邻居",
             "C.InternetExplorer",
             "D.回收站"
         ],
-        "answer": "C",
+        "answer": "D",
         "hint": "右击InternetExplorer图标时，不会出现'资源管理器'这一选项。"
     },
     {
@@ -1419,7 +1419,7 @@ const questions = [
         "hint": "在资源管理器中，如果只单击左边窗口的文件夹而不打开，右边窗口的内容不会变化。"
     },
     {
-        "question": "在Windows中，如果在“资源管理器”中将当前磁盘由驱动器D改变到驱动器C，下面的操作正确的是（D）。",
+        "question": "在Windows中，如果在“资源管理器”中将当前磁盘由驱动器D改变到驱动器C，下面的操作正确的是（A）。",
         "options": [
             "A.单击驱动器C的图标",
             "B.右击驱动",
@@ -2130,7 +2130,7 @@ const questions = [
             "C.动态分析和静态分析都可以",
             "D.动态分析和静态分析都不行"
         ],
-        "answer": "C",
+        "answer": "D",
         "hint": "犯罪主网站的信息可以通过静态分析和动态分析两种方法来获取。"
     },
     {
@@ -4252,46 +4252,38 @@ const questions = [
 ];
 
 let currentQuestionIndex = 0; // 当前题目索引
+
 const optionLetters = ['A', 'B', 'C', 'D']; // 创建一个包含选项字母的数组
 
-// ...
 
 function displayQuestion() {
-    const currentQuestion = questions[currentQuestionIndex];
+    const currentQuestion = questions[currentQuestionIndex] || {};
     document.getElementById('questionNumber').textContent = `题目 ${currentQuestionIndex + 1}`;
-    document.getElementById('questionText').textContent = removeAnswerInBrackets(currentQuestion.question);
-  
+    document.getElementById('questionText').textContent = removeAnswerInBrackets(currentQuestion.question || '');
+
     const optionsContainer = document.getElementById('optionsContainer');
-    optionsContainer.innerHTML = ''; // 清空之前的选项
-  
-    // 动态创建选项按钮
+    optionsContainer.innerHTML = '';
+
     currentQuestion.options.forEach((option, index) => {
-      const button = document.createElement('button');
-      // 正确设置按钮文本，只添加一次字母前缀
-      button.textContent = `${option}`;
-      // 为按钮添加点击事件，传递选项的字母前缀
-      button.onclick = function() { checkAnswer(optionLetters[index]); };
-      optionsContainer.appendChild(button);
+        const button = document.createElement('button');
+        button.textContent = `${optionLetters[index]}. ${option}`;
+        button.onclick = function() { checkAnswer(optionLetters[index]); };
+        optionsContainer.appendChild(button);
     });
-  }
+}
 
 function checkAnswer(selectedOption) {
   const currentQuestion = questions[currentQuestionIndex];
   const correctAnswer = currentQuestion.answer;
   let message = '';
 
-
   if (selectedOption === correctAnswer) {
     message = '回答正确!';
-} else {
+  } else {
     message = `回答错误! 提示: ${currentQuestion.hint}`;
     alert(message); // 只有在回答错误时才弹出消息
-}
-
-// 如果需要在正确时显示某些信息，可以在这里添加代码
-if (selectedOption === correctAnswer) {
-    console.log(message); // 例如，控制台输出正确的消息
-}
+  }
+  console.log(message);
 
   // 移动到下一题或结束测验
   if (currentQuestionIndex < questions.length - 1) {
@@ -4304,21 +4296,19 @@ if (selectedOption === correctAnswer) {
 }
 
 function removeAnswerInBrackets(text) {
-    return text.replace(/（.*?）/g, '（ ）');
+    return text.replace(/（.*?）/g, '');
 }
 
-// 更新进度条的函数
-function updateProgressBar() {
-  const progressBar = document.getElementById('progressBar');
-  const progress = (currentQuestionIndex / (questions.length - 1)) * 100;
-  progressBar.style.width = progress + '%';
+function updateProgressBar(progress) {
+    if (isNaN(progress) || progress < 0 || progress > 1) return; // 确保progress是有效的值
+
+    const progressBar = document.getElementById('progressBar');
+    progressBar.style.width = `${progress * 100}%`;
 }
 
-// 切换主题模式的函数
-function switchTheme() {
-  const app = document.getElementById('app');
-  app.classList.toggle('night-mode');
-  app.classList.toggle('.eye-care-mode');
+function updateProgressBarByIndex(index) {
+    const progress = index / (questions.length - 1);
+    updateProgressBar(progress);
 }
 
 // 绑定按钮点击事件
@@ -4341,11 +4331,69 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 document.getElementById('modeBtn').addEventListener('click', switchTheme);
 
 // 页面加载时显示第一题
-window.onload = displayQuestion;
-window.onload = updateProgressBar;
+window.onload = function() {
+  displayQuestion();
+  updateProgressBar();
+};
 
-modeBtn.addEventListener('click', switchTheme);
+// 切换主题模式的函数
+function switchTheme() {
+  const app = document.getElementById('app');
+  app.classList.toggle('night-mode');
+  app.classList.toggle('eye-care-mode');
+}
 
-// Initialize the app
-displayQuestion();
-updateProgressBar();
+// 绑定进度条拖动事件
+// 添加一个显示进度百分比的元素
+let isDragging = false;
+const progressBar = document.getElementById('progressBar');
+const progressHandle = document.getElementById('progressHandle');
+
+const progressBarContainer = document.getElementById('progressBarContainer');
+progressHandle.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    e.preventDefault(); // 阻止默认行为，例如文本选择
+});
+
+// 更新进度条和文本的函数
+function updateProgressBar(e, progress) {
+    let newProgress = progress;
+    progressBar.style.width = `${newProgress * 100}%`;
+    progressHandle.style.left = `calc(${newProgress * 100}% - 10px)`; // 减去滑块的一半宽度以居中
+    displayQuestionByIndex(Math.floor(newProgress * questions.length));
+}
+
+// 绑定进度条手柄拖动事件
+progressHandle.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    updateProgressBar(e, (e.clientX - progressBarContainer.getBoundingClientRect().left) / progressBarContainer.offsetWidth);
+});
+
+document.addEventListener('mousemove', function(e) {
+    if (isDragging) {
+        updateProgressBar(e, (e.clientX - progressBarContainer.getBoundingClientRect().left) / progressBarContainer.offsetWidth);
+    }
+});
+
+document.addEventListener('mouseup', function() {
+    if (isDragging) {
+        isDragging = false;
+    }
+});
+
+// 根据题目索引显示题目的函数
+function displayQuestionByIndex(index) {
+    // 确保索引在有效范围内
+    if (index >= 0 && index < questions.length) {
+        currentQuestionIndex = index;
+        displayQuestion();
+    } else {
+        console.error('提供的索引超出题目范围。');
+    }
+}
+
+// 页面加载完毕时初始化
+window.onload = function() {
+    const initialProgress = currentQuestionIndex / (questions.length - 1);
+    updateProgressBar(null, initialProgress);
+};
