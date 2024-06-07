@@ -4291,9 +4291,9 @@ function checkAnswer(selectedOption) {
     }
 }
 
-// 去除括号内的答案
+// 去除所有类型括号内的内容
 function removeAnswerInBrackets(text) {
-    return text.replace(/（.*?）/g, '');
+    return text.replace(/[\(\（\[\【\{].*?[\)\）\]\】\}]/g, '');
 }
 
 // 更新进度条
