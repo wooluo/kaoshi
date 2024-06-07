@@ -13,18 +13,16 @@ button {
     cursor: pointer;
 }
 
-#questionContainer {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #cccccc;
-}
-
 #optionsContainer {
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
 }
 
 #optionsContainer button {
-    margin-top: 10px;
+    flex: 1;
+    margin-bottom: 10px;
+    text-align: left; /* 将文本左对齐 */
 }
 
 #progressBar {
@@ -52,7 +50,7 @@ button {
   
 /* 护眼模式 */
 .eye-care-mode {
-    background-color: #d4e157;
+    background-color: #6E7B6C;
     color: #3e2723;
 }
 
@@ -60,15 +58,13 @@ button {
     width: 100%;
     height: 20px;
     background-color: #ddd;
-    position: relative;
+    cursor: pointer;
 }
 
 #progressBar {
     height: 100%;
     background-color: green;
-    position: absolute;
-    left: 0;
-    top: 0;
+    width: 0%;
 }
 
 #progressHandle {
@@ -86,4 +82,16 @@ button {
 #progressText {
     text-align: center;
     margin-top: 5px;
+}
+
+#previousBtn {
+    position: absolute;
+    left: 20px;
+    transform: translateY(-1%);
+}
+
+#nextBtn {
+    position: absolute;
+    right: 20px;
+    transform: translateY(-1%);
 }
