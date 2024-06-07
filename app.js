@@ -4250,12 +4250,10 @@ const questions = [
 "hint": "公安机关、国家安全机关因国家安全或侦查需要调取数据时，个人应依法配合。"
 }
 ];
+let currentQuestionIndex = 0;
+const optionLetters = ['A', 'B', 'C', 'D'];
 
-let currentQuestionIndex = 0; // 当前题目索引
-
-const optionLetters = ['A', 'B', 'C', 'D']; // 创建一个包含选项字母的数组
-
-
+// 显示题目和选项
 function displayQuestion() {
     const currentQuestion = questions[currentQuestionIndex] || {};
     document.getElementById('questionNumber').textContent = `题目 ${currentQuestionIndex + 1}`;
@@ -4267,123 +4265,60 @@ function displayQuestion() {
     currentQuestion.options.forEach((option, index) => {
         const button = document.createElement('button');
         button.textContent = `${optionLetters[index]}. ${option}`;
-        button.onclick = function() { checkAnswer(optionLetters[index]); };
+        button.addEventListener('click', () => checkAnswer(optionLetters[index]));
         optionsContainer.appendChild(button);
     });
 }
 
+// 检查答案
 function checkAnswer(selectedOption) {
-  const currentQuestion = questions[currentQuestionIndex];
-  const correctAnswer = currentQuestion.answer;
-  let message = '';
+    const currentQuestion = questions[currentQuestionIndex];
+    const correctAnswer = currentQuestion.answer;
+    const message = selectedOption === correctAnswer ? '回答正确!' : `回答错误! 提示: ${currentQuestion.hint}`;
+    
+    if (selectedOption !== correctAnswer) {
+        alert(message); // 只有在回答错误时才弹出消息
+    }
+    console.log(message);
 
-  if (selectedOption === correctAnswer) {
-    message = '回答正确!';
-  } else {
-    message = `回答错误! 提示: ${currentQuestion.hint}`;
-    alert(message); // 只有在回答错误时才弹出消息
-  }
-  console.log(message);
-
-  // 移动到下一题或结束测验
-  if (currentQuestionIndex < questions.length - 1) {
-    currentQuestionIndex++;
-    displayQuestion();
-    updateProgressBar();
-  } else {
-    alert('恭喜，您已完成所有题目！');
-  }
+    // 移动到下一题或结束测验
+    if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        displayQuestion();
+        updateProgressBarByIndex(currentQuestionIndex);
+    } else {
+        alert('恭喜，您已完成所有题目！');
+    }
 }
 
+// 去除括号内的答案
 function removeAnswerInBrackets(text) {
     return text.replace(/（.*?）/g, '');
 }
 
+// 更新进度条
 function updateProgressBar(progress) {
-    if (isNaN(progress) || progress < 0 || progress > 1) return; // 确保progress是有效的值
+    if (isNaN(progress) || progress < 0 || progress > 1) return;
 
     const progressBar = document.getElementById('progressBar');
     progressBar.style.width = `${progress * 100}%`;
 }
 
+// 根据索引更新进度条
 function updateProgressBarByIndex(index) {
     const progress = index / (questions.length - 1);
     updateProgressBar(progress);
 }
 
-// 绑定按钮点击事件
-document.getElementById('previousBtn').addEventListener('click', () => {
-  if (currentQuestionIndex > 0) {
-    currentQuestionIndex--;
-    displayQuestion();
-    updateProgressBar();
-  }
-});
-
-document.getElementById('nextBtn').addEventListener('click', () => {
-  if (currentQuestionIndex < questions.length - 1) {
-    currentQuestionIndex++;
-    displayQuestion();
-    updateProgressBar();
-  }
-});
-
-document.getElementById('modeBtn').addEventListener('click', switchTheme);
-
-// 页面加载时显示第一题
-window.onload = function() {
-  displayQuestion();
-  updateProgressBar();
-};
-
-// 切换主题模式的函数
+// 切换主题模式
 function switchTheme() {
-  const app = document.getElementById('app');
-  app.classList.toggle('night-mode');
-  app.classList.toggle('eye-care-mode');
+    const app = document.getElementById('app');
+    app.classList.toggle('night-mode');
+    app.classList.toggle('eye-care-mode');
 }
 
-// 绑定进度条拖动事件
-// 添加一个显示进度百分比的元素
-let isDragging = false;
-const progressBar = document.getElementById('progressBar');
-const progressHandle = document.getElementById('progressHandle');
-
-const progressBarContainer = document.getElementById('progressBarContainer');
-progressHandle.addEventListener('mousedown', function(e) {
-    isDragging = true;
-    e.preventDefault(); // 阻止默认行为，例如文本选择
-});
-
-// 更新进度条和文本的函数
-function updateProgressBar(e, progress) {
-    let newProgress = progress;
-    progressBar.style.width = `${newProgress * 100}%`;
-    progressHandle.style.left = `calc(${newProgress * 100}% - 10px)`; // 减去滑块的一半宽度以居中
-    displayQuestionByIndex(Math.floor(newProgress * questions.length));
-}
-
-// 绑定进度条手柄拖动事件
-progressHandle.addEventListener('mousedown', function(e) {
-    isDragging = true;
-    updateProgressBar(e, (e.clientX - progressBarContainer.getBoundingClientRect().left) / progressBarContainer.offsetWidth);
-});
-
-document.addEventListener('mousemove', function(e) {
-    if (isDragging) {
-        updateProgressBar(e, (e.clientX - progressBarContainer.getBoundingClientRect().left) / progressBarContainer.offsetWidth);
-    }
-});
-
-document.addEventListener('mouseup', function() {
-    if (isDragging) {
-        isDragging = false;
-    }
-});
-
-// 根据题目索引显示题目的函数
+// 根据题目索引显示题目
 function displayQuestionByIndex(index) {
-    // 确保索引在有效范围内
     if (index >= 0 && index < questions.length) {
         currentQuestionIndex = index;
         displayQuestion();
@@ -4392,8 +4327,62 @@ function displayQuestionByIndex(index) {
     }
 }
 
+// 绑定按钮点击事件
+document.getElementById('previousBtn').addEventListener('click', () => {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        displayQuestion();
+        updateProgressBarByIndex(currentQuestionIndex);
+    }
+});
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+    if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        displayQuestion();
+        updateProgressBarByIndex(currentQuestionIndex);
+    }
+});
+
+document.getElementById('modeBtn').addEventListener('click', switchTheme);
+
+// 进度条拖动和点击事件处理
+let isDragging = false;
+const progressBar = document.getElementById('progressBar');
+const progressBarContainer = document.getElementById('progressBarContainer');
+
+// 更新进度条和显示问题
+function updateProgress(e) {
+    const rect = progressBarContainer.getBoundingClientRect();
+    const newProgress = (e.clientX - rect.left) / rect.width;
+    updateProgressBar(newProgress);
+    displayQuestionByIndex(Math.floor(newProgress * questions.length));
+}
+
+progressBarContainer.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    updateProgress(e);
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+        updateProgress(e);
+    }
+});
+
+document.addEventListener('mouseup', () => {
+    if (isDragging) {
+        isDragging = false;
+    }
+});
+
+// 进度条点击事件处理
+progressBarContainer.addEventListener('click', (e) => {
+    updateProgress(e);
+});
+
 // 页面加载完毕时初始化
-window.onload = function() {
-    const initialProgress = currentQuestionIndex / (questions.length - 1);
-    updateProgressBar(null, initialProgress);
+window.onload = () => {
+    displayQuestion();
+    updateProgressBarByIndex(currentQuestionIndex);
 };
