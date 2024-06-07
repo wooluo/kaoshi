@@ -222,10 +222,10 @@ const questions = [
     {
         "question": "下列（C）文件是iOS应用的安装文件。",
         "options": [
-            "A.tesD.exe",
-            "B.tesD.apk",
-            "C.tesD.ipa",
-            "D.tesD.jg"
+            "A.test.exe",
+            "B.test.apk",
+            "C.test.ipa",
+            "D.test.jg"
         ],
         "answer": "C",
         "hint": "iOS应用的安装文件通常以.ipa为扩展名，这是苹果官方的应用打包格式。"
