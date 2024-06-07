@@ -44,12 +44,46 @@ button {
     transition: width 0.3s;
 }
 
+/* 夜晚模式 */
 .night-mode {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: black;
+    color: white;
+  }
+  
+/* 护眼模式 */
+.eye-care-mode {
+    background-color: #d4e157;
+    color: #3e2723;
 }
 
-.eye-care-mode {
-    background-color: #f5f5dc;
-    color: #555555;
+#progressBarContainer {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    position: relative;
+}
+
+#progressBar {
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#progressHandle {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    cursor: pointer;
+    user-select: none; /* 防止点击选中文本 */
+}
+
+#progressText {
+    text-align: center;
+    margin-top: 5px;
 }
