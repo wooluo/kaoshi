@@ -4,6 +4,10 @@ body {
     color: #333333;
     margin: 0;
     padding: 20px;
+    background-image: url('1.jpeg'); /* 将背景图像路径替换为您的图像路径 */
+    background-size: cover; /* 将图像调整为覆盖整个背景 */
+    background-repeat: no-repeat; /* 防止图像重复 */
+    background-position: cover; /* 将图像居中 */
 }
 
 button {
