@@ -1641,9 +1641,9 @@ const questions = [
     {
         "question": "苹果手机通讯录的数据库名字是（A）。",
         "options": [
-            "A.ContactC.db",
-            "B.CalendaB.sqlitedb",
-            "C.PhotoC.sqlite",
+            "A.Contacts.db",
+            "B.Calendar.sqlitedb",
+            "C.Photos.sqlite",
             "D.consolidated.db"
         ],
         "answer": "A",
