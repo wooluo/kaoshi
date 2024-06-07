@@ -1102,13 +1102,13 @@ const questions = [
     {
         "question": "使用华为手机助手进行数据备份，备份的密码信息存储在以下哪个文件中。（C）",
         "options": [
-            "A.dataInfC.ini",
-            "B.datainfC.dat",
-            "C.backupinfC.dat",
-            "D.backupinfC.ini"
+            "A.datainfo.ini",
+            "B.datainfo.dat",
+            "C.backupinfo.dat",
+            "D.backupinfo.ini"
         ],
         "answer": "C",
-        "hint": "华为手机助手备份的数据，包括密码信息，通常存储在'backupinfC.dat'文件中。"
+        "hint": "华为手机助手备份的数据，包括密码信息，通常存储在'backupinfo.dat'文件中。"
     },
     {
         "question": "在一起赌博案件中，嫌疑人在云服务器中搭建了赌博网站，办案人员对其网站进行分析后发现赌博网站数据库中存储了用户的用户名明文和用户密码的MD5值，请问办案人员通过以下哪种方式不能使用用户信息进行登录。（B）",
@@ -1157,10 +1157,10 @@ const questions = [
     {
         "question": "已知手机中安装有QQ应用，以下哪个ADB备份命令不能备份到QQ应用数据？（C）。",
         "options": [
-            "A.adbbackup-apk-sharedcoA.tencenD.mobileqq",
-            "B.adbbackup-noapk-nosharedcoA.tencenD.mobileqq",
-            "C.adbbackup-apk-shared-systemcoA.tencenD.mm",
-            "D.adbbackup-noapk-shared-all"
+            "A.adb backup -apk -shared com.tencenD.mobileqq",
+            "B.adb backup -noapk -noshared com.tencenD.mobileqq",
+            "C.adb backup -apk -shared -system com.tencenD.mm",
+            "D.adb backup -noapk -shared -all"
         ],
         "answer": "C",
         "hint": "该命令会备份系统应用coA.tencenD.mm的数据，而不是QQ应用coA.tencenD.mobileqq的数据。"
@@ -3060,13 +3060,13 @@ const questions = [
     {
         "question": "使用华为手机助手进行数据备份，备份的密码信息存储在以下哪个文件中（B）。",
         "options": [
-            "A.dataInfC.ini",
-            "B.backupinfC.ini",
-            "C.datainfC.dat",
-            "D.backupinfC.dat"
+            "A.datainfo.ini",
+            "B.backupinfo.ini",
+            "C.datainfo.dat",
+            "D.backupinfo.dat"
         ],
         "answer": "B",
-        "hint": "华为手机助手备份的数据，包括密码信息，通常存储在backupinfC.ini文件中。"
+        "hint": "华为手机助手备份的数据，包括密码信息，通常存储在backupinfo.ini文件中。"
     },
     {
         "question": "根据apk加固发展历程来看，最早的apk加固技术是哪个（A）。",
