@@ -4355,6 +4355,7 @@ let isDragging = false;
 const progressBar = document.getElementById('progressBar');
 const progressBarContainer = document.getElementById('progressBarContainer');
 
+
 // 更新进度条和显示问题
 function updateProgress(e) {
     const rect = progressBarContainer.getBoundingClientRect();
@@ -4364,7 +4365,28 @@ function updateProgress(e) {
 
 progressBarContainer.addEventListener('mousedown', (e) => {
     isDragging = true;
-    updateProgress(e);
+    touchStartX = e.clientX;
+});
+
+progressBarContainer.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    touchStartX = e.touches[0].clientX;
+});
+
+document.addEventListener('mouseup', (e) => {
+    if (isDragging) {
+        isDragging = false;
+        touchEndX = e.clientX;
+        updateProgress(e);
+    }
+});
+
+document.addEventListener('touchend', (e) => {
+    if (isDragging) {
+        isDragging = false;
+        touchEndX = e.changedTouches[0].clientX;
+        updateProgress(e.changedTouches[0]);
+    }
 });
 
 document.addEventListener('mousemove', (e) => {
@@ -4373,9 +4395,10 @@ document.addEventListener('mousemove', (e) => {
     }
 });
 
-document.addEventListener('mouseup', () => {
+document.addEventListener('touchmove', (e) => {
     if (isDragging) {
-        isDragging = false;
+        e.preventDefault(); // 防止触摸移动时页面滚动
+        updateProgress(e.touches[0]);
     }
 });
 
@@ -4383,6 +4406,13 @@ document.addEventListener('mouseup', () => {
 progressBarContainer.addEventListener('click', (e) => {
     updateProgress(e);
 });
+
+// 进度条触摸事件处理
+progressBarContainer.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].clientX;
+    updateProgress(e.changedTouches[0]);
+});
+
 
 // 页面加载完毕时初始化
 window.onload = () => {
