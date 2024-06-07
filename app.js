@@ -761,10 +761,10 @@ const questions = [
     {
         "question": "已知手机中安装有QQ应用，以下哪个ADB备份命令不能备份到QQ应用数据（A）。",
         "options": [
-            "A.adbbackup-apk-sharedcoA.tencenD.mobileqq",
-            "B.adbbackup-noapk-nosharedcoA.tencenD.mobileqq",
-            "C.adbbackup-noapk-shared–all",
-            "D.adbbackup-apk-shared-systemcoA.tencenD.mm"
+            "A.adb backup -apk -shared com.tencenD.mobileqq",
+            "B.adb backup -noapk -noshared com.tencenD.mobileqq",
+            "C.adb backup -noapk -shared –all",
+            "D.adb backup -apk -shared -system com.tencenD.mm"
         ],
         "answer": "A",
         "hint": "该命令只会备份QQ的apk文件，而不会备份共享或系统数据。"
@@ -904,10 +904,10 @@ const questions = [
     {
         "question": "下列哪个表示找出工资表中工资最高的前三名（C）。",
         "options": [
-            "A.selectrownum, ename, salaryfromemporderbysalarydesc",
-            "B.selectrownum, ename, salaryfromemporderbysalary",
-            "C.selectrownum, ename, salaryfromemporderbysalarydesclimit3",
-            "D.selectrownum, ename, salaryfromemporderbysalarylimit3"
+            "A.select rownum, ename, salary fromemp order by salary desc",
+            "B.select rownum, ename, salary fromemp order by salary",
+            "C.select rownum, ename, salary fromemp order by salarydescl imit 3",
+            "D.select rownum, ename, salary fromemp order by salary limit 3"
         ],
         "answer": "C",
         "hint": "使用limit子句可以限制查询结果的数量，这里是限制为工资最高的前三名。"
