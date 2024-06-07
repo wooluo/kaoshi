@@ -761,10 +761,10 @@ const questions = [
     {
         "question": "已知手机中安装有QQ应用，以下哪个ADB备份命令不能备份到QQ应用数据（A）。",
         "options": [
-            "A.adb backup -apk -shared com.tencenD.mobileqq",
-            "B.adb backup -noapk -noshared com.tencenD.mobileqq",
+            "A.adb backup -apk -shared com.tencent.mobileqq",
+            "B.adb backup -noapk -noshared com.tencent.mobileqq",
             "C.adb backup -noapk -shared –all",
-            "D.adb backup -apk -shared -system com.tencenD.mm"
+            "D.adb backup -apk -shared -system com.tencent.mm"
         ],
         "answer": "A",
         "hint": "该命令只会备份QQ的apk文件，而不会备份共享或系统数据。"
