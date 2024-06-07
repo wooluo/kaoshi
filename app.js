@@ -704,7 +704,7 @@ const questions = [
         "hint": "snifferpro是一个网络嗅探工具，可以捕获网络流量并分析数据。"
     },
     {
-        "question": "https: //urD.cn/5x3d5Su这个域名是（C）。",
+        "question": "https: //url.cn/5x3d5Su这个域名是（C）。",
         "options": [
             "A.三级域名",
             "B.IP地址",
