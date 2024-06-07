@@ -3016,10 +3016,10 @@ const questions = [
     {
         "question": "以下哪个命令可以获取容器的详细信息（B）。",
         "options": [
-            "A.dockerps",
-            "B.dockerinfo",
-            "C.dockerinspect",
-            "D.dockerstats"
+            "A.docker ps",
+            "B.docker info",
+            "C.docker inspect",
+            "D.docker stats"
         ],
         "answer": "C",
         "hint": "dockerinspect命令可以显示容器的详细配置信息和状态。"
@@ -3038,8 +3038,8 @@ const questions = [
     {
         "question": "Linux下MYSQL启动时加载的配置是（B）。",
         "options": [
-            "A.mysqD.ini",
-            "B.mysqD.cnf",
+            "A.mysql.ini",
+            "B.mysql.cnf",
             "C.my.ini",
             "D.my.cnf"
         ],
