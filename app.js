@@ -3549,7 +3549,7 @@ const questions = [
                 "C.止损性",
                 "D.普遍性"
             ],
-            "answer": "A",
+            "answer": "B",
             "hint": "奉献的本质是非功利性的，即不以追求个人利益为目的。"
         },
         {
@@ -3564,7 +3564,7 @@ const questions = [
             "hint": "LAN是LocalAreaNetwork的缩写，指的是局域网。"
         },
         {
-            "question": "下面说法不正确的是（C）。",
+            "question": "下面说法不正确的是（D）。",
             "options": [
                 "A.二进制和其他进制可以直接转换",
                 "B.十进制和其他进制可以直接转换",
@@ -3586,7 +3586,7 @@ const questions = [
             "hint": "字节是计算机存储容量的基本单位，表示8位二进制数。"
         },
         {
-            "question": "断电会使原存信息丢失的存储器是（C）。",
+            "question": "断电会使原存信息丢失的存储器是（A）。",
             "options": [
                 "A.RAM",
                 "B.硬盘",
