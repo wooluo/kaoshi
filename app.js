@@ -3722,14 +3722,6 @@ const questions = [
             "hint": "USB设备的插拔记录通常保存在注册表的枚举分支下。"
         },
         {
-            "question": "二、判断题",
-            "options": ["正确","错误"
-                
-            ],
-            "answer": "",
-            "hint": "接下来的题目是判断题，需要根据题目描述判断正确或错误。"
-        },
-        {
             "question": "341、根据《网络安全法》的规定，市级以上地方人民政府有关部门的网络安全保护和监督管理职责，按照国家有关规定确定。（√）",
             "options": ["正确","错误"
                 
@@ -3794,12 +3786,12 @@ const questions = [
             "hint": "哈希碰撞是不可避免的，但可以通过设计良好的哈希函数和冲突解决策略来最小化。"
         },
         {
-            "question": "349、记录苹果手机最后备份信息的文件是coA.applA.MobileBackup。（√）",
+            "question": "349、记录苹果手机最后备份信息的文件是com.apple.MobileBackup。（√）",
             "options": ["正确","错误"
                 
             ],
             "answer": "A",
-            "hint": "coA.applA.MobileBackup文件用于存储苹果手机备份的相关信息。"
+            "hint": "com.apple.MobileBackup文件用于存储苹果手机备份的相关信息。"
         },
         {
             "question": "350、磁盘克隆仅能复制可见的文件。（×）",
