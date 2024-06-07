@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>电子数据取证分析师理论试题卷库</title>
+    <title>职业技能大赛试题卷库</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="app">
-        <h1>电子数据取证分析师理论试题卷库</h1>
+        <h1>北京市第六届职业技能大赛-电子数据取证分析师理论试题卷库</h1>
         <button id="modeBtn">切换模式</button>
         <div id="questionContainer">
             <span id="questionNumber"></span>
             <p id="questionText"></p>
             <div id="optionsContainer"></div>
         </div>
-        <div id="progressBar"></div>
+        <div id="progressBarContainer">
+            <div id="progressBar"></div>
+            <div id="progressHandle" class="handle"></div>
+        </div>
+        <div id="progressText"></div>
+        </div>
         <button id="previousBtn">前一题</button>
         <button id="nextBtn">后一题</button>
         <script src="app.js"></script>
