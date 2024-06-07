@@ -1476,10 +1476,10 @@ const questions = [
     {
         "question": "（B）命令被用来验证中继链路的配置状态。",
         "options": [
-            "A.showinterfacesvlan",
-            "B.showinterfacestrunk",
-            "C.showinterfacesswitchport",
-            "D.showipinterfacebrief"
+            "A.show interfaces vlan",
+            "B.show interfaces trunk",
+            "C.show interfacess witchport",
+            "D.show ipinterface brief"
         ],
         "answer": "B",
         "hint": "showinterfacestrunk命令用于验证中继链路（trunklink）的配置状态。"
