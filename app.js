@@ -4250,6 +4250,8 @@ const questions = [
 "hint": "公安机关、国家安全机关因国家安全或侦查需要调取数据时，个人应依法配合。"
 }
 ];
+
+
 let currentQuestionIndex = 0;
 const optionLetters = ['A', 'B', 'C', 'D'];
 
@@ -4281,7 +4283,6 @@ function checkAnswer(selectedOption) {
     }
     console.log(message);
 
-    // 移动到下一题或结束测验
     if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
         displayQuestion();
@@ -4302,6 +4303,9 @@ function updateProgressBar(progress) {
 
     const progressBar = document.getElementById('progressBar');
     progressBar.style.width = `${progress * 100}%`;
+
+    // 根据进度条更新当前显示的问题
+    displayQuestionByIndex(Math.floor(progress * questions.length));
 }
 
 // 根据索引更新进度条
@@ -4356,7 +4360,6 @@ function updateProgress(e) {
     const rect = progressBarContainer.getBoundingClientRect();
     const newProgress = (e.clientX - rect.left) / rect.width;
     updateProgressBar(newProgress);
-    displayQuestionByIndex(Math.floor(newProgress * questions.length));
 }
 
 progressBarContainer.addEventListener('mousedown', (e) => {
