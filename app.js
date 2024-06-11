@@ -3069,14 +3069,14 @@ const questions = [
         "hint": "华为手机助手备份的数据，包括密码信息，通常存储在backupinfo.ini文件中。"
     },
     {
-        "question": "根据apk加固发展历程来看，最早的apk加固技术是哪个（A）。",
+        "question": "根据apk加固发展历程来看，最早的apk加固技术是哪个（C）。",
         "options": [
             "A.指令抽离",
             "B.动态加载",
             "C.指令转换",
             "D.虚拟机源码保护"
         ],
-        "answer": "A",
+        "answer": "C",
         "hint": "指令抽离是早期的APK加固技术之一，它通过修改应用代码来隐藏敏感逻辑。"
     },
     {
