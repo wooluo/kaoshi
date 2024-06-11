@@ -440,15 +440,15 @@ const questions = [
         "hint": "二分查找是一种对数时间复杂度的算法，其复杂度为O(log(N))。"
     },
     {
-        "question": "Oracle创建完一个新实例后，会自动创建多个用户，以下不属于Oracle自动创建的用户为（D）。",
+        "question": "Oracle创建完一个新实例后，会自动创建多个用户，以下不属于Oracle自动创建的用户为（C）。",
         "options": [
             "A.SYS",
             "B.SYSTEM",
             "C.DBA",
             "D.SCOTT"
         ],
-        "answer": "D",
-        "hint": "Oracle数据库安装后会自动创建SYS、SYSTEM等用户，而SCOTT用户需要手动创建。"
+        "answer": "C",
+        "hint": "Oracle数据库安装后会自动创建SYS、SYSTEM等用户，而SCOTT用户需要手动创建，另外DBA是角色，不是用户。"
     },
     {
         "question": "在数据库系统中，对存取权限的定义称为（B）。",
