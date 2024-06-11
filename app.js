@@ -3256,7 +3256,7 @@ const questions = [
         "hint": "电子数据法庭科学鉴定的原则包括依法原则、证据原始性原则和完整性原则，但不包括及时性原则。"
     },
     {
-        "question": "https: //urD.cn/5x3d5Su这个域名是（C）。",
+        "question": "https: //url.cn/5x3d5Su这个域名是（C）。",
         "options": [
             "A.三级域名",
             "B.IP地址",
@@ -3264,10 +3264,10 @@ const questions = [
             "D.子域名"
         ],
         "answer": "C",
-        "hint": "https: //urD.cn/5x3d5Su是一个长链接转换后的短链接，用于缩短URL地址。"
+        "hint": "https: //url.cn/5x3d5Su是一个长链接转换后的短链接，用于缩短URL地址。"
     },
     {
-        "question": "以下哪些信息不包含在Whois信息中（A）。",
+        "question": "以下哪些信息不包含在Whois信息中（D）。",
         "options": [
             "A.URL注册商",
             "B.URL注册人及电话",
@@ -3278,25 +3278,25 @@ const questions = [
         "hint": "Whois信息通常包含域名注册商、注册人信息、注册时间和过期时间，但不包括注册地址。"
     },
     {
-        "question": "网址http: //www.abc.coA.cn的一级域名是（C）。",
+        "question": "网址http: //www.abc.com.cn的一级域名是（C）。",
         "options": [
-            "A.http: //www.abc.coA.cn",
-            "B.www.abc.coA.cn",
-            "C.abc.coA.cn",
-            "D.coA.cn"
+            "A.http: //www.abc.com.cn",
+            "B.www.abc.com.cn",
+            "C.abc.com.cn",
+            "D.com.cn"
         ],
-        "answer": "D",
-        "hint": "一级域名是.coA.cn，它位于域名的最后部分，表示顶级域。"
+        "answer": "C",
+        "hint": "一级域名是abc.com.cn，它位于域名的最后部分，表示顶级域。"
     },
     {
-        "question": "分析涉网新型案件涉案APK时，客服的调证的关键信息主要是在哪一步查找的（C）。",
+        "question": "分析涉网新型案件涉案APK时，客服的调证的关键信息主要是在哪一步查找的（A）。",
         "options": [
             "A.静态分析",
             "B.动态分析",
             "C.代码分析",
             "D.解压缩分析"
         ],
-        "answer": "D",
+        "answer": "A",
         "hint": "解压缩分析可以帮助调查人员获取APK文件中的资源文件，其中可能包含客服信息。"
     },
     {
@@ -3318,8 +3318,8 @@ const questions = [
             "C.北京数字天堂",
             "D.小美客服"
         ],
-        "answer": "A",
-        "hint": "dcloud是北京柚子科技有限公司的产品，该公司提供移动应用开发和打包服务。"
+        "answer": "C",
+        "hint": "dcloud是北京数字天堂的产品，该公司提供移动应用开发和打包服务。"
     },
     {
         "question": "apicloud是哪个打包公司的特征（A）。",
@@ -3329,8 +3329,8 @@ const questions = [
             "C.北京数字天堂",
             "D.小美客服"
         ],
-        "answer": "B",
-        "hint": "apicloud是成都美洽科技有限公司的产品，提供移动应用开发和打包服务。"
+        "answer": "A",
+        "hint": "apicloud是柚子(北京)科技有限公司旗下产品，提供移动应用开发和打包服务。"
     },
     {
         "question": "对APK静态分析不包含以下哪些数据（D）。",
@@ -3377,7 +3377,7 @@ const questions = [
         "hint": "涉案APP中通常包含网站域名、第三方SDK和第三方客服信息，但不会包含嫌疑人的真实姓名。"
     },
     {
-        "question": "以下关于APK静态分析和动态分析的说法正确的是（C）。",
+        "question": "以下关于APK静态分析和动态分析的说法正确的是（D）。",
         "options": [
             "A.APK静态分析就是静态反编译，动态分析就是动态反编译",
             "B.APK通过动态分析可以分析出APK的加固信息",
@@ -3432,7 +3432,7 @@ const questions = [
         "hint": "date命令在Linux系统中用于显示或设置系统的日期和时间。"
     },
     {
-        "question": "在对CentOS7.0系统的服务器进行远程勘验的时候，以下哪个命令能够确认服务器历史登录用户及其时间（A）。",
+        "question": "在对CentOS7.0系统的服务器进行远程勘验的时候，以下哪个命令能够确认服务器历史登录用户及其时间（B）。",
         "options": [
             "A.who",
             "B.last",
@@ -3445,10 +3445,10 @@ const questions = [
     {
         "question": "在对CentOS7.0系统的服务器进行远程勘验的时候，以下哪个命令可以查看到当前登录到系统中的用户（A）。",
         "options": [
-            "A.Who",
-            "B.Find",
-            "C.name",
-            "D.connect"
+            "A.who",
+            "B.last",
+            "C.lastb",
+            "D.lsblk"
         ],
         "answer": "A",
         "hint": "who命令在Linux系统中用于显示当前登录到系统中的所有用户。"
@@ -3469,11 +3469,11 @@ const questions = [
             "options": [
                 "A.dcomcnfg",
                 "B.control",
-                "C.eventvwB.msc",
+                "C.eventvwr.msc",
                 "D.dpiscaling"
             ],
             "answer": "C",
-            "hint": "eventvwB.msc是打开Windows事件查看器的命令。"
+            "hint": "eventvwr.msc是打开Windows事件查看器的命令。"
         },
         {
             "question": "以下那个端口号被默认用作宝塔面板登陆端口（D）。",
@@ -3689,7 +3689,7 @@ const questions = [
             "hint": "手机克隆是华为提供的一种手机数据备份和迁移功能。"
         },
         {
-            "question": "关于对扣押的原始存储介质的处理，下列说法正确的是（B）。",
+            "question": "关于对扣押的原始存储介质的处理，下列说法正确的是（D）。",
             "options": [
                 "A.扣押的原始存储介质在切断电源后，无需封存",
                 "B.扣押的原始存储介质中的电子数据，可以进行修改",
@@ -3722,12 +3722,12 @@ const questions = [
             "hint": "USB设备的插拔记录通常保存在注册表的枚举分支下。"
         },
         {
-            "question": "341、根据《网络安全法》的规定，市级以上地方人民政府有关部门的网络安全保护和监督管理职责，按照国家有关规定确定。（√）",
+            "question": "341、根据《网络安全法》的规定，市级以上地方人民政府有关部门的网络安全保护和监督管理职责，按照国家有关规定确定。（×）",
             "options": ["正确","错误"
                 
             ],
-            "answer": "A",
-            "hint": "该说法符合《网络安全法》的相关规定。"
+            "answer": "B",
+            "hint": "根据《网络安全法》的规定第八条，国家网信部门负责统筹协调网络安全工作和相关监督管理工作。国务院电信主管部门、公安部门和其他有关机关依照本法和有关法律、行政法规的规定，在各自职责范围内负责网络安全保护和监督管理工作。县级以上地方人民政府有关部门的网络安全保护和监督管理职责，按照国家有关规定确定。"
         },
         {
             "question": "342、网信部门和有关部门在履行网络安全保护职责中获取的信息，用于维护网络安全的需要，也可以用于其他用途。（×）",
