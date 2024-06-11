@@ -3181,24 +3181,24 @@ const questions = [
     {
         "question": "当对用户授予对象权限时，使用（A）从句表示允许得到权限的用户进一步将这些权限授予给其他用户或角色。",
         "options": [
-            "A.withgrantoption",
-            "B.withrevokeoption",
-            "C.withadminoption",
-            "D.withgrantadmin"
+            "A.with grant option",
+            "B.with revoke option",
+            "C.with admin option",
+            "D.with grant admin"
         ],
         "answer": "A",
-        "hint": "WITHGRANTOPTION子句允许用户将他们收到的权限再授予给其他用户。"
+        "hint": "WITH GRANT OPTION子句允许用户将他们收到的权限再授予给其他用户。"
     },
     {
         "question": "建立会话的角色为（A）。",
         "options": [
-            "A.CREATESESSION",
-            "B.CREATESEQUENCE",
-            "C.CREATECLUSTER",
-            "D.CREATEVIEW"
+            "A.CREATE SESSION",
+            "B.CREATE SEQUENCE",
+            "C.CREATE CLUSTER",
+            "D.CREATE VIEW"
         ],
         "answer": "A",
-        "hint": "CREATESESSION是SQL命令，用于在数据库中建立一个新的会话。"
+        "hint": "CREATE SESSION是SQL命令，用于在数据库中建立一个新的会话。"
     },
     {
         "question": "一个事务的执行，要么全部完成，要么全部不做，一个事务中对数据库的所有操作都是一个不可分割的操作序列的属性是（A）。",
