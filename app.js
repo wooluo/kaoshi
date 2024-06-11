@@ -1883,16 +1883,16 @@ const questions = [
     {
         "question": "JPG文件的开头特征是（B）。",
         "options": [
-            "A.FFFF",
-            "B.FFD8",
-            "C.FFD9",
+            "A.FF FF",
+            "B.FF D8",
+            "C.FF D9",
             "D.JPG"
         ],
         "answer": "B",
         "hint": "JPEG图像文件通常以FFD8作为文件的起始标记。"
     },
     {
-        "question": "jpg图片底层中，缩略图的头部代码是（A）。",
+        "question": "JPG图片底层中，缩略图的头部代码是（A）。",
         "options": [
             "A.FF D4",
             "B.FF D8",
@@ -3137,10 +3137,10 @@ const questions = [
     {
         "question": "jpg图片底层中，缩略图的头部代码是（B）。",
         "options": [
-            "A.FFD4",
-            "B.FFD8",
-            "C.FFD9",
-            "D.FFD5"
+            "A.FF D4",
+            "B.FF D8",
+            "C.FF D9",
+            "D.FF D5"
         ],
         "answer": "B",
         "hint": "在JPEG图像文件中，缩略图通常以FFD8作为起始标记。"
