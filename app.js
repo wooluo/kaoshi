@@ -883,9 +883,9 @@ const questions = [
         "question": "在创建数据库表时，下列哪个字段表示主键？（B）。",
         "options": [
             "A.UNIQUE",
-            "B.PRIMARYKEY",
-            "C.FOREIGNKEY",
-            "D.MAINKEY"
+            "B.PRIMARY KEY",
+            "C.FOREIGN KEY",
+            "D.MAIN KEY"
         ],
         "answer": "B",
         "hint": "PRIMARYKEY是数据库中用于标识表中每行的唯一性的字段。"
@@ -904,10 +904,10 @@ const questions = [
     {
         "question": "下列哪个表示找出工资表中工资最高的前三名（C）。",
         "options": [
-            "A.select rownum, ename, salary fromemp order by salary desc",
-            "B.select rownum, ename, salary fromemp order by salary",
-            "C.select rownum, ename, salary fromemp order by salarydescl imit 3",
-            "D.select rownum, ename, salary fromemp order by salary limit 3"
+            "A.select rownum, ename, salary from emp order by salary desc",
+            "B.select rownum, ename, salary from emp order by salary",
+            "C.select rownum, ename, salary from emp order by salarydescl imit 3",
+            "D.select rownum, ename, salary from emp order by salary limit 3"
         ],
         "answer": "C",
         "hint": "使用limit子句可以限制查询结果的数量，这里是限制为工资最高的前三名。"
@@ -1047,10 +1047,10 @@ const questions = [
     {
         "question": "安卓设备通过adb备份出的文件的签名是什么。（C）",
         "options": [
-            "A.ANDROIDBACKUP",
-            "B.ADBBACKUP",
-            "C.ANDROIDFILES",
-            "D.ADBFILES"
+            "A.ANDROID BACKUP",
+            "B.ADB BACKUP",
+            "C.ANDROID FILES",
+            "D.ADB FILES"
         ],
         "answer": "C",
         "hint": "安卓设备通过adb备份的文件通常带有'ANDROIDBACKUP'签名。"
