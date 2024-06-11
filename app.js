@@ -1133,7 +1133,7 @@ const questions = [
         "hint": "在ThinkPhp框架中，模块映射配置的名称是'URL_MODULE_MAP'。"
     },
     {
-        "question": "删除表的数据时，TRUNCATETABLE的结果是什么（A）。",
+        "question": "删除表的数据时，TRUNCATE TABLE的结果是什么（C）。",
         "options": [
             "A.表中的数据被删除，然后表也被删除",
             "B.不符合检查约束要求的数据被删除，而符合检查约束要求的数据依然保留",
@@ -1141,7 +1141,7 @@ const questions = [
             "D.符合检查约束要求的数据被删除，而不符合检查约束要求的数据依然保留"
         ],
         "answer": "C",
-        "hint": "TRUNCATETABLE命令用于删除表中的所有行，但保留表结构和其属性、索引等。"
+        "hint": "TRUNCATE TABLE命令用于删除表中的所有行，但保留表结构和其属性、索引等。"
     },
     {
         "question": "通常对安卓手机的取证，可采取备份的方式获取数据，以下哪种方法的备份对手机的数据可能造成破坏？（D）。",
