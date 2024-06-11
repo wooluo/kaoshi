@@ -1045,15 +1045,15 @@ const questions = [
         "hint": "访问控制虽然对数据库安全至关重要，但它不是事务处理的用途。"
     },
     {
-        "question": "安卓设备通过adb备份出的文件的签名是什么。（C）",
+        "question": "安卓设备通过adb备份出的文件的签名是什么。（D）",
         "options": [
             "A.ANDROID BACKUP",
             "B.ADB BACKUP",
             "C.ANDROID FILES",
-            "D.ADB FILES"
+            "D.以上均不正确"
         ],
-        "answer": "C",
-        "hint": "安卓设备通过adb备份的文件通常带有'ANDROIDBACKUP'签名。"
+        "answer": "D",
+        "hint": "安卓设备通过ADB备份出的文件通常有一个特定的文件签名，简称为“magic number”。"
     },
     {
         "question": "在linux下使用Volatility对内存进行取证分析时，打印arp的命令是（A）。",
