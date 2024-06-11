@@ -770,14 +770,14 @@ const questions = [
         "hint": "该命令只会备份QQ的apk文件，而不会备份共享或系统数据。"
     },
     {
-        "question": "安卓APK应用中提取的证书HASH,可以用于（A）。",
+        "question": "安卓APK应用中提取的证书HASH,可以用于（B）。",
         "options": [
             "A.发起调证",
             "B.应用关联",
             "C.进行HASH破解，解密出明文密码",
             "D.在应用里进行用户登录时使用"
         ],
-        "answer": "A",
+        "answer": "B",
         "hint": "HASH值可以用于发起调证，帮助验证应用的真实性和完整性。"
     },
     {
