@@ -627,14 +627,14 @@ const questions = [
         "hint": "一个扇区通常指的是512字节的数据存储单元。"
     },
     {
-        "question": "FAT文件格式下，删除的文件头字节改为什么代码标记（C）。",
+        "question": "FAT文件格式下，删除的文件头字节改为什么代码标记（A）。",
         "options": [
             "A.E5",
             "B.EF",
             "C.FD",
             "D.80"
         ],
-        "answer": "C",
+        "answer": "A",
         "hint": "在FAT文件系统中，删除文件时，文件分配表（FAT）中的相应条目会标记为E5。"
     },
     {
