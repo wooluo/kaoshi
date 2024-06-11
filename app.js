@@ -759,14 +759,14 @@ const questions = [
         "hint": "为了保护隐私和安全，涉案APP中通常不会包含嫌疑人的真实姓名。"
     },
     {
-        "question": "已知手机中安装有QQ应用，以下哪个ADB备份命令不能备份到QQ应用数据（A）。",
+        "question": "已知手机中安装有QQ应用，以下哪个ADB备份命令不能备份到QQ应用数据（D）。",
         "options": [
             "A.adb backup -apk -shared com.tencent.mobileqq",
             "B.adb backup -noapk -noshared com.tencent.mobileqq",
             "C.adb backup -noapk -shared –all",
             "D.adb backup -apk -shared -system com.tencent.mm"
         ],
-        "answer": "A",
+        "answer": "D",
         "hint": "该命令只会备份QQ的apk文件，而不会备份共享或系统数据。"
     },
     {
@@ -1159,11 +1159,11 @@ const questions = [
         "options": [
             "A.adb backup -apk -shared com.tencenD.mobileqq",
             "B.adb backup -noapk -noshared com.tencenD.mobileqq",
-            "C.adb backup -apk -shared -system com.tencenD.mm",
+            "C.adb backup -apk -shared -system com.tencent.mm",
             "D.adb backup -noapk -shared -all"
         ],
         "answer": "C",
-        "hint": "该命令会备份系统应用coA.tencenD.mm的数据，而不是QQ应用coA.tencenD.mobileqq的数据。"
+        "hint": "该命令会备份系统应用com.tencent.mm的数据，而不是QQ应用coA.tencenD.mobileqq的数据。"
     },
     {
         "question": "用于查看/var/log/wtmp日志的命令是（B）。",
