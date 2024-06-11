@@ -1980,23 +1980,23 @@ const questions = [
         "hint": "ECS（ElasticComputeService）通常指的是云服务器服务。"
     },
     {
-        "question": "无法扣押原始存储介质的，可以提取电子数据，但应当在笔录中注明不能扣押原始存储介质的原因、原始存储介质的存放地点或者电子数据的来源等情况，并计算电子数据的（A）。",
+        "question": "无法扣押原始存储介质的，可以提取电子数据，但应当在笔录中注明不能扣押原始存储介质的原因、原始存储介质的存放地点或者电子数据的来源等情况，并计算电子数据的（B）。",
         "options": [
             "A.MD5",
             "B.完整性校验值",
             "C.哈希值",
             "D.SHA1"
         ],
-        "answer": "D",
+        "answer": "B",
         "hint": "计算哈希值是确保电子数据完整性的一种方法。"
     },
     {
         "question": "以下哪个操作系统开始具有WindowsBitLocker加密功能（B）。",
         "options": [
-            "A.WindowsXP",
-            "B.WindowsVista",
-            "C.Windows7",
-            "D.Windows10"
+            "A.Windows XP",
+            "B.Windows Vista",
+            "C.Windows 7",
+            "D.Windows 10"
         ],
         "answer": "B",
         "hint": "WindowsBitLocker加密功能首次出现在WindowsVista操作系统中。"
@@ -2013,7 +2013,7 @@ const questions = [
         "hint": "macOS是基于Unix的混合内核操作系统，专为苹果电脑设计，普通PC上无法安装。"
     },
     {
-        "question": "获取电子数据时需要对具体的介质进行（A），这是分析电子数据的前提，能够有效防止取证过程中有意或无意地变动数据，确保所获数据的真实可靠。",
+        "question": "获取电子数据时需要对具体的介质进行（C），这是分析电子数据的前提，能够有效防止取证过程中有意或无意地变动数据，确保所获数据的真实可靠。",
         "options": [
             "A.复制",
             "B.录像",
