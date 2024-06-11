@@ -1155,15 +1155,15 @@ const questions = [
         "hint": "降级备份涉及将系统或应用的数据备份到旧版本，这可能会导致数据损坏或丢失。"
     },
     {
-        "question": "已知手机中安装有QQ应用，以下哪个ADB备份命令不能备份到QQ应用数据？（C）。",
+        "question": "已知手机中安装有QQ应用，以下哪个ADB备份命令能备份到QQ应用数据？（A）。",
         "options": [
-            "A.adb backup -apk -shared com.tencenD.mobileqq",
+            "A.adb backup -apk -shared com.tencent.mobileqq",
             "B.adb backup -noapk -noshared com.tencenD.mobileqq",
             "C.adb backup -apk -shared -system com.tencent.mm",
             "D.adb backup -noapk -shared -all"
         ],
-        "answer": "C",
-        "hint": "该命令会备份系统应用com.tencent.mm的数据，而不是QQ应用coA.tencenD.mobileqq的数据。"
+        "answer": "A",
+        "hint": "该命令会备份系统应用com.tencent.mobileqq的数据，是QQ应用com.tencent.mobileqq的数据。"
     },
     {
         "question": "用于查看/var/log/wtmp日志的命令是（B）。",
