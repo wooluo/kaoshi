@@ -51,8 +51,8 @@ button {
   
 /* 护眼模式 */
 .eye-care-mode {
-    background-color: #6E7B6C;
-    color: #3e2723;
+    background-color: #F5F5DC; /* 米黄色，柔和的背景色 */
+    color: #000000; /* 深灰色，文本颜色，保留较好的对比度 */
 }
 
 #progressBarContainer {
@@ -64,7 +64,7 @@ button {
 
 #progressBar {
     height: 100%;
-    background-color: green;
+    background-color: rgb(0, 120, 0);
     width: 0%;
 }
 
