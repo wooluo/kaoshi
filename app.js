@@ -431,13 +431,13 @@ const questions = [
     {
         "question": "二分查找的时间复杂度是多少（B）。",
         "options": [
-            "A.O(n)",
-            "B.O((logn))",
-            "C.O(n*logn))",
-            "D.O(n^2)"
+            "A.O(N)",
+            "B.O(log(N))",
+            "C.O(N*log(N))",
+            "D.O(N^2)"
         ],
         "answer": "B",
-        "hint": "二分查找是一种对数时间复杂度的算法，其复杂度为O(logn)。"
+        "hint": "二分查找是一种对数时间复杂度的算法，其复杂度为O(log(N))。"
     },
     {
         "question": "Oracle创建完一个新实例后，会自动创建多个用户，以下不属于Oracle自动创建的用户为（D）。",
