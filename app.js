@@ -420,10 +420,10 @@ const questions = [
     {
         "question": "假设变量x的值为39，要输出x的值，下列正确的语句是（C）。",
         "options": [
-            "A.SysteA.ConsolA.writeline(“x”)",
-            "B.SysteA.ConsolA.WriteLine(“x”)",
-            "C.SysteA.ConsolA.WriteLine(“x={0}”,x)",
-            "D.SysteA.ConsolA.WriteLine(“x={x}”)"
+            "A.System.Console.writeline(“x”)",
+            "B.System.Console.WriteLine(“x”)",
+            "C.System.Console.WriteLine(“x={0}”, x)",
+            "D.System.Console.WriteLine(“x={x}”)"
         ],
         "answer": "C",
         "hint": "在C#中，字符串格式化使用{0}作为占位符，并通过相应的参数来替换。"
