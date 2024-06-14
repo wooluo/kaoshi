@@ -3700,15 +3700,15 @@ const questions = [
             "hint": "扣押的原始存储介质应当封存，确保在封存状态下无法被使用或启动，以保护电子数据的完整性。"
         },
         {
-            "question": "下面不属于内存镜像工具的是（B）。",
+            "question": "下面不属于内存镜像工具的是（A）。",
             "options": [
                 "A.moontools",
                 "B.FTKimager",
                 "C.Dumplt",
                 "D.Volatility"
             ],
-            "answer": "C",
-            "hint": "Dumplt并不是一个内存镜像工具，而是一个用于内存分析的工具。"
+            "answer": "A",
+            "hint": "moontools并不是一个内存镜像工具，而是一个用于内存分析的工具。"
         },
         {
             "question": "USB插拔记录在注册表的那个键值下（A）。",
@@ -4206,12 +4206,12 @@ const questions = [
 "hint": "职业道德具有行业特性、利益相关、表现多样等特点。"
 },
 {
-"question": "397、 显示器是由监视器与显示卡两部分组成的。(×)",
+"question": "397、 显示器是由监视器与显示卡两部分组成的。(√)",
 "options": [
     "正确",
     "错误"
 ],
-"answer": "B",
+"answer": "A",
 "hint": "显示器包括显示屏和显示卡两部分。"
 },
 {
