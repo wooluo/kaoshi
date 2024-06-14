@@ -1080,10 +1080,10 @@ const questions = [
     {
         "question": "Linux下MYSQL启动时加载的配置是（B）。",
         "options": [
-            "A.mysqD.ini",
+            "A.mysql.ini",
             "B.my.cnf",
             "C.my.ini",
-            "D.mysqD.cnf"
+            "D.mysql.cnf"
         ],
         "answer": "B",
         "hint": "MySQL的配置文件通常命名为'my.cnf'，这是启动时加载的配置文件。"
@@ -3036,14 +3036,14 @@ const questions = [
         "hint": "-i参数在grep命令中用于忽略大小写的搜索。"
     },
     {
-        "question": "Linux下MYSQL启动时加载的配置是（B）。",
+        "question": "Linux下MYSQL启动时加载的配置是（D）。",
         "options": [
             "A.mysql.ini",
             "B.mysql.cnf",
             "C.my.ini",
             "D.my.cnf"
         ],
-        "answer": "B",
+        "answer": "D",
         "hint": "MySQL在Linux系统启动时通常加载的是my.cnf配置文件。"
     },
     {
