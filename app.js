@@ -480,7 +480,7 @@ const questions = [
         "C.Accept",
         "D.Referer"
     ],
-    "answer": "A",
+    "answer": "D",
     "hint": "HTTP头中的X-Forwarded-For字段可以被用来标识原始请求的来源IP，但它也可以被伪造，因此不应该仅依赖这个字段来判断请求的真实来源。"
 },
 {
